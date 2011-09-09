@@ -176,8 +176,9 @@
           color: #fff;
         }
         ul {
-          display: block;
+          display:block;
           li {
+			display:block;
             a {
               background-color: transparent;
               font-weight: normal;
@@ -196,14 +197,14 @@
       }
     }
     li ul {
-      background-color: #333;
+      background-color:@blue_ll;
       float: left;
       display: none;
       position: absolute;
       top: 40px;
-      min-width: 160px;
-      max-width: 220px;
-      _width: 160px;
+      min-width: 200px;
+      max-width: 300px;
+      _width: 200px;
       margin-left: 0;
       margin-right: 0;
       padding: 0;
@@ -224,7 +225,7 @@
           clear: both;
           font-weight: normal;
           line-height: 19px;
-          color: #bbb;
+          color: #fff;
           &:hover {
             background-color: #333;
             background-color: rgba(255,255,255,.25);
