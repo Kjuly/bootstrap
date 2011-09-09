@@ -148,6 +148,41 @@ form div.error {
   }
 }
 
+// Info styles - Kj 09/09/2011
+form div.info {
+  //background: lighten(@blue, 57%);
+  background-color: lighten(#6bd0ee, 25%);
+  padding: 10px 20px;
+  margin: -30px 0 10px;
+  .border-radius(4px);
+  //@info-text: desaturate(lighten(@blue, 25%), 25%);
+  @info-text:lighten(#6bd0ee, 20%);
+  > label,
+  span.help-inline,
+  span.help-block {
+    color: @blue;
+  }
+  input[type=text],
+  input[type=password],
+  textarea {
+    border-color: @info-text;
+    .box-shadow(0 0 3px rgba(4,156,219,.25));
+    &:focus {
+      border-color: darken(@info-text, 10%);
+      .box-shadow(0 0 6px rgba(4,156,219,.5));
+    }
+  }
+  .input-prepend,
+  .input-append {
+    span.add-on {
+      background: lighten(@blue, 50%);
+      border-color: @info-text;
+      color: darken(@info-text, 10%);
+    }
+  }
+}
+
+
 // Form element sizes
 .input-mini, input.mini, textarea.mini, select.mini {
   width: 60px;
@@ -355,7 +390,8 @@ input.disabled {
       }
     }
   }
-  div.error {
+  div.error,
+  div.info {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
