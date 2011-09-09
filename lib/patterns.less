@@ -759,3 +759,55 @@ input[type=submit].btn {
     }
   }
 }
+
+//-----------------------
+// Footer
+footer {
+	.col_left {
+		float:left;
+		ul {
+			list-style-type:none;
+			margin:0 0 6px 0;
+			padding:0;
+			li {
+				display:inline-block;
+				margin:0 20px 0 0;
+				padding:0;
+				a {
+					text-decoration:none;
+					color:@gray;
+					font-size:11px;
+					text-shadow: 0 -1px 0 rgba(255,255,255,.8);
+					&:hover {
+						color:@blue;
+					}
+				}
+			}
+		}
+		p {
+			font-size:11px;
+			a {
+				text-decoration:none;
+				color:@gray;
+				text-shadow: 0 -1px 0 rgba(255,255,255,.8);
+				&:hover {
+					color:@blue;
+				}
+			}
+		}
+	}
+	.col_right {
+		float:right;
+		p {
+			font-size:11px;
+			a {
+				text-decoration:none;
+				color:@gray;
+				text-shadow: 0 -1px 0 rgba(255,255,255,.8);
+				&:hover {
+					color:@blue;
+				}
+			}
+		}
+	}
+}
