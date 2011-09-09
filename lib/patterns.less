@@ -6,11 +6,20 @@
 // TOPBAR
 // ------
 
+// Topbar for Site Logo
+#toplogo {
+	position:fixed;
+	top:0; left:0; right:0;
+	height:100px;
+	width:auto;
+	display:block;
+	background:url('../images/header_bg.jpg') repeat-x;
+}
 // Topbar for Branding and Nav
 .topbar {
   height: 40px;
   position: fixed;
-  top: 0;
+  top: 100px;
   left: 0;
   right: 0;
   z-index: 10000;
@@ -18,23 +27,23 @@
 
   // gradient is applied to it's own element because overflow visible is not honored by ie when filter is present
   .fill {
-    background:#222;
-    #gradient > .vertical(#333, #222);
+    background:@blue_d;
+    #gradient > .vertical(@blue_l, @blue_d);
     @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
     .box-shadow(@shadow);
   }
 
   // Links get text shadow
   a {
-    color: @grayLight;
+    color: @white;
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
   }
 
   // Hover and active states
   a:hover,
   ul li.active a {
-    background-color: #333;
-    background-color: rgba(255,255,255,.05);
+    background-color: #fff;
+    background-color: rgba(255,255,255,.1);
     color: @white;
     text-decoration: none;
   }
@@ -128,8 +137,8 @@
         }
       }
       &.active a {
-        background-color: #222;
-        background-color: rgba(0,0,0,.5);
+        background-color: #fff;
+        background-color: rgba(255,255,255,.2);
       }
     }
 
