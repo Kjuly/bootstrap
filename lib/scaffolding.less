@@ -78,12 +78,18 @@ body {
   #font > .sans-serif(normal,@basefont,@baseline);
   color: @gray;
   text-rendering: optimizeLegibility;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
 }
 
 // Container (centered, fixed-width layouts)
 .container {
   width: 940px;
   margin: 0 auto;
+	position:relative;
+	top:0;
 }
 
 // Top Menu Area - Kj 09/09/2011
@@ -104,7 +110,8 @@ body {
 
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 .container-fluid {
-  margin-top:160px;
+  //margin-top:160px;
+  margin-top:20px;
   padding: 0 20px;
   .clearfix();
   .sidebar {
