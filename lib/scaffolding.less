@@ -88,17 +88,105 @@ body {
 
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 .container-fluid {
-  padding: 0 20px;
-  .clearfix();
-  .sidebar {
-    float: left;
-    width: 220px;
-  }
-  .content {
-    min-width: 700px;
-    max-width: 1180px;
-    margin-left: 240px;
-  }
+	padding: 0 20px;
+	.clearfix();
+	.sidebar {
+		float: left;
+		width: 220px;
+	}
+	.content {
+		min-width: 700px;
+		max-width: 1180px;
+		margin-left: 240px;
+	}
+	#filiter_panel {
+		background-color:@light;
+		height:auto;
+		width:100%;
+		margin:0;
+		margin-top:40px;
+		padding:0;
+		border: 1px solid #ccc;
+		border-bottom-color: #bbb;
+		border-top:none;
+		.border-radius( 0 0 4px 4px );
+		.box-shadow( 0 0 9px #dfdfdf );
+		display:none;
+		form {
+			margin:20px 45px;
+			fieldset {
+				.areaset {
+					.clearfix();
+					padding:0 10px 20px 10px;
+					.title {
+						float:left;
+						height:auto!important;
+						min-height:50px;
+						height:50px;
+						width:10%;
+						text-align:right;
+						strong {
+							font-size:14px;
+							font-weight:bold;
+						}
+					}
+					.area_content {
+						float:right;
+						height:auto!important;
+						min-height:30px;
+						height:30px;
+						width:90%;
+						border-bottom:1px solid lighten(#888, 10%);
+						ul, select {
+							margin-left:15px;
+						}
+						.combox_word_input_check {
+							background: #f5f5f5;
+							height: 25px;
+							width: auto!important;
+							min-width: 100px;
+							width: 100px;
+							line-height: 25px;
+							padding: 0 5px;
+							border: 1px solid #ccc;
+							.border-radius(3px);
+							display:inline-block;
+							margin:0 0 5px 15px;
+							span {
+								height:25px;
+								line-height:25px;
+								float: left;
+								display: block;
+								width: auto;
+								min-width: 16px;
+								padding: 4px 4px 4px 5px;
+								color: @grayLight;
+								font-weight: normal;
+								line-height: 18px;
+								height: 18px;
+								text-align: center;
+								text-shadow: 0 1px 0 #fff;
+							}
+							input[type=text] {
+								border:none;
+								.border-radius(0);
+								height:23px;
+								width:30px;
+								margin:0;
+								display:inline;
+							}
+							input[type=checkbox] {
+								float:right;
+								width:12px;
+								height:25px;
+								display:inline-block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 
