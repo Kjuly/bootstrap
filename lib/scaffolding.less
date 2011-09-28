@@ -23,15 +23,15 @@ body {
 
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 .container-fluid {
+	position: relative;
+	min-width:940px;
 	padding: 0 20px;
 	.clearfix();
-	.sidebar {
+	> .sidebar {
 		float: left;
 		width: 220px;
 	}
-	.content {
-		min-width: 700px;
-		max-width: 1180px;
+	> .content {
 		margin-left: 240px;
 	}
 	#filiter_panel {

@@ -24,10 +24,10 @@ html,body{background-color:#ffffff;}
 body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:18px;color:#404040;}
 .container{width:940px;margin-left:auto;margin-right:auto;zoom:1;}.container:before,.container:after{display:table;content:"";zoom:1;*display:inline;}
 .container:after{clear:both;}
-.container-fluid{padding:0 20px;zoom:1;position:relative;min-width:940px;padding-left:20px;padding-right:20px;zoom:1;}.container-fluid:before,.container-fluid:after{display:table;content:"";zoom:1;*display:inline;}
+.container-fluid{position:relative;min-width:940px;padding:0 20px;zoom:1;position:relative;min-width:940px;padding-left:20px;padding-right:20px;zoom:1;}.container-fluid:before,.container-fluid:after{display:table;content:"";zoom:1;*display:inline;}
 .container-fluid:after{clear:both;}
-.container-fluid .sidebar{float:left;width:220px;}
-.container-fluid .content{min-width:700px;max-width:1180px;margin-left:240px;}
+.container-fluid>.sidebar{float:left;width:220px;}
+.container-fluid>.content{margin-left:240px;}
 .container-fluid #filiter_panel{background-color:#f9f9f9;height:auto;width:100%;margin:0;margin-top:40px;padding:0;border:1px solid #ccc;border-bottom-color:#bbb;border-top:none;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;-webkit-box-shadow:0 0 9px #dfdfdf;-moz-box-shadow:0 0 9px #dfdfdf;box-shadow:0 0 9px #dfdfdf;display:none;}.container-fluid #filiter_panel form{margin:20px 45px;}.container-fluid #filiter_panel form fieldset .areaset{zoom:1;padding:0 10px 20px 10px;}.container-fluid #filiter_panel form fieldset .areaset:before,.container-fluid #filiter_panel form fieldset .areaset:after{display:table;content:"";zoom:1;*display:inline;}
 .container-fluid #filiter_panel form fieldset .areaset:after{clear:both;}
 .container-fluid #filiter_panel form fieldset .areaset .title{float:left;height:auto!important;min-height:50px;height:50px;width:10%;text-align:right;}.container-fluid #filiter_panel form fieldset .areaset .title strong{font-size:14px;font-weight:bold;}
