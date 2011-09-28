@@ -24,16 +24,37 @@ body {
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 .container-fluid {
 	position: relative;
-	min-width:940px;
-	padding: 0 20px;
+	min-width: 940px;
+	padding-left: 20px;
+	padding-right: 20px;
 	.clearfix();
 	> .sidebar {
 		float: left;
 		width: 220px;
+		.well {
+			background:#fff;
+			border:none;
+			box-shadow:none;
+			ul#page_about_sidebar {
+				list-style-type: none;
+				display:block;
+				li {
+					height:25px;
+					width:100%;
+					display:block;
+					margin-bottom:10px;
+				}
+			}
+		}
 	}
+	// TODO in v2: rename this and .popover .content to be more specific
 	> .content {
 		margin-left: 240px;
+		div {
+			margin-bottom:30px;
+		}
 	}
+	// Filiter Panel
 	#filiter_panel {
 		background-color:@light;
 		height:auto;
@@ -122,19 +143,6 @@ body {
 			}
 		}
 	}
-  position: relative;
-  min-width: 940px;
-  padding-left: 20px;
-  padding-right: 20px;
-  .clearfix();
-  > .sidebar {
-    float: left;
-    width: 220px;
-  }
-  // TODO in v2: rename this and .popover .content to be more specific
-  > .content {
-    margin-left: 240px;
-  }
 }
 
 
