@@ -46,7 +46,7 @@
       }
 
     , processScroll: function () {
-        var scrollTop = $window.scrollTop() + 10
+        var scrollTop = $window.scrollTop() + 50
           , offsets = this.offsets
           , targets = this.targets
           , activeTarget = this.activeTarget
